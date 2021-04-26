@@ -1,5 +1,4 @@
-import React from "react";
-// import "./Article.css";
+import React, { memo } from "react";
 
 const article = ({ article }) => (
   <div className="article">
@@ -8,4 +7,4 @@ const article = ({ article }) => (
   </div>
 );
 
-export default article;
+export default memo(article);

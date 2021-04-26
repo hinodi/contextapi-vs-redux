@@ -1,5 +1,4 @@
 import React, { useState, useContext } from "react";
-// import "./AddArticle.css";
 import { ArticleContext } from "../../context/articleContext";
 
 const AddArticle = () => {
