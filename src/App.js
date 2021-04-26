@@ -1,15 +1,16 @@
 import React from "react";
+import { Provider } from "react-redux";
 
-import ArticleProvider from "./context/articleContext";
+import store from "./redux/store";
 import Articles from "./containers/Articles";
 import AddArticle from "./components/AddArticle/AddArticle";
 
 function App() {
   return (
-    <ArticleProvider>
+    <Provider store={store}>
       <AddArticle />
       <Articles />
-    </ArticleProvider>
+    </Provider>
   );
 }
 export default App;

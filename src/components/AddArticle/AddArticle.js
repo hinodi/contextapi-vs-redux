@@ -1,9 +1,8 @@
-import React, { useState, useContext } from "react";
-// import "./AddArticle.css";
-import { ArticleContext } from "../../context/articleContext";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 
 const AddArticle = () => {
-  const { dispatch } = useContext(ArticleContext);
+  const dispatch = useDispatch();
   const [article, setArticle] = useState({});
 
   const handleArticleData = (e) => {

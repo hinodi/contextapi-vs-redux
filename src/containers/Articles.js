@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
+import { useSelector } from "react-redux";
 
-import { ArticleContext } from "../context/articleContext";
 import Article from "../components/Article/Article";
 
 const Articles = () => {
-  const { articles } = useContext(ArticleContext);
+  const articles = useSelector((state) => state);
+
   return (
     <div>
       {articles.map((article) => (
